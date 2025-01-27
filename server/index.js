@@ -1,4 +1,5 @@
 require('dotenv').config({ path: '../.env' });
+// require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -30,6 +31,7 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/wishlist', wishlistRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/transactions', transactionRoutes);
+
 
 // Start Server
 const PORT = process.env.PORT || 5000;
